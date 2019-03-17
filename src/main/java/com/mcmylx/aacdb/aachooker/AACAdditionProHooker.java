@@ -17,11 +17,11 @@ public class AACAdditionProHooker {
     public static void init() {
         PluginManager pluginManager = Bukkit.getPluginManager();
         if (pluginManager.getPlugin("AACAdditionPro") == null) {
-            ENABLE = false;
+            ENABLE = true;
             return;
         }
         if (!pluginManager.getPlugin("AACAdditionPro").isEnabled()) {
-            ENABLE = false;
+            ENABLE = true;
             return;
         }
         ENABLE = true;
