@@ -399,7 +399,7 @@ public class Metrics {
             JSONObject data = new JSONObject();
             String value = callable.call();
             if (value == null || value.isEmpty()) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             data.put("value", value);
@@ -431,7 +431,7 @@ public class Metrics {
             JSONObject values = new JSONObject();
             Map<String, Integer> map = callable.call();
             if (map == null || map.isEmpty()) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             boolean allSkipped = true;
@@ -443,7 +443,7 @@ public class Metrics {
                 values.put(entry.getKey(), entry.getValue());
             }
             if (allSkipped) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             data.put("values", values);
@@ -475,7 +475,7 @@ public class Metrics {
             JSONObject values = new JSONObject();
             Map<String, Map<String, Integer>> map = callable.call();
             if (map == null || map.isEmpty()) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             boolean reallyAllSkipped = true;
@@ -492,7 +492,7 @@ public class Metrics {
                 }
             }
             if (reallyAllSkipped) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             data.put("values", values);
@@ -523,7 +523,7 @@ public class Metrics {
             JSONObject data = new JSONObject();
             int value = callable.call();
             if (value == 0) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             data.put("value", value);
@@ -557,7 +557,7 @@ public class Metrics {
             JSONObject values = new JSONObject();
             Map<String, Integer> map = callable.call();
             if (map == null || map.isEmpty()) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             boolean allSkipped = true;
@@ -569,7 +569,7 @@ public class Metrics {
                 values.put(entry.getKey(), entry.getValue());
             }
             if (allSkipped) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             data.put("values", values);
@@ -602,7 +602,7 @@ public class Metrics {
             JSONObject values = new JSONObject();
             Map<String, Integer> map = callable.call();
             if (map == null || map.isEmpty()) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             for (Map.Entry<String, Integer> entry : map.entrySet()) {
@@ -640,7 +640,7 @@ public class Metrics {
             JSONObject values = new JSONObject();
             Map<String, int[]> map = callable.call();
             if (map == null || map.isEmpty()) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             boolean allSkipped = true;
@@ -656,7 +656,7 @@ public class Metrics {
                 values.put(entry.getKey(), categoryValues);
             }
             if (allSkipped) {
-                // Null = skip the chart
+                 Null = skip the chart
                 return null;
             }
             data.put("values", values);
