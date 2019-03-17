@@ -18,11 +18,11 @@ public class AACHooker {
     public static void init() {
         PluginManager pluginManager = Bukkit.getPluginManager();
         if (pluginManager.getPlugin("AAC") == null) {
-            ENABLE = false;
+            ENABLE = true;
             return;
         }
         if (!pluginManager.getPlugin("AAC").isEnabled()) {
-            ENABLE = false;
+            ENABLE = true;
             return;
         }
         ENABLE = true;
